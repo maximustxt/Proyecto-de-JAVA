@@ -4,6 +4,7 @@ import Interfaces.ExpenseCalculator;
 import Entities.Expense;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ExpenseCalculatorImpl implements ExpenseCalculator {
     @Override
@@ -13,13 +14,10 @@ public class ExpenseCalculatorImpl implements ExpenseCalculator {
 
     @Override
     public double CalculateTotalExpense(List<Expense> expenses) {
-       double totalExpense = 0;
-
-
-    for(Expense expense : expenses){
-        totalExpense = totalExpense + expense.getAmount();
+        double totalExpense = 0;
+             for(Expense expense : expenses){
+                    totalExpense = totalExpense + expense.getAmount();
+             }
+                    return totalExpense;
+         }
     }
-
-        return totalExpense;
-    }
-}

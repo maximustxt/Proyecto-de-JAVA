@@ -6,13 +6,13 @@ public class Expense {
     private double amount;
     private ExpenseCategory category;
 
-    private Integer date;
+    private String date;
 
 
     public Expense() {
     }
 
-    public Expense(int id, double amount, ExpenseCategory category, Integer date) {
+    public Expense(int id, double amount, ExpenseCategory category, String date) {
         this.id = id;
         this.amount = amount;
         this.category = category;
@@ -44,11 +44,11 @@ public class Expense {
         this.category = category;
     }
 
-    public Integer getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Integer date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
