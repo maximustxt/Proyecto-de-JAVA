@@ -91,6 +91,7 @@ public class Main {
             index++;
         }
 
+
         //* DETALLES DE LOS GASTOS :
 
         if(expenseCalculator.CalculateTotalExpense(arrayOfExpenses) == 0){
